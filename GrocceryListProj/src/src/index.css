@@ -1,0 +1,134 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100svh;
+}
+header,footer{
+  width: 100%;
+  background-color: blue;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  justify-content: center;
+}
+header span,footer span{
+  font-size: 1.5rem;
+}
+header{
+  position: sticky;
+  top: 0;
+}
+footer{
+  position: sticky;
+  bottom: 0;
+}
+
+section article{
+  height: 2.5rem;
+  background-color: cornflowerblue;
+  margin: .25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.info{
+  display: grid;
+  grid-template-columns: 50px 40px 30px;
+  width: 300px;
+ 
+}
+.input span{
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: opacity .8s;
+  
+}
+.input span:nth-child(1):hover{
+  opacity: .7;
+}
+section button{
+
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+.trash,.plus{
+  background: transparent;
+  border: none;
+}
+.trash svg,.plus svg{
+  font-size: 1.2rem;
+}
+.trash:hover svg,.plus:hover svg,.addInput button:hover{
+  color: blue;
+}
+.trash:active svg{
+  color: crimson;
+}
+.plus:active svg{
+  color: lime;
+}
+section form input[type="checkbox"]{
+  min-height: 48px;
+  height: 2.5rem;
+  width: 20px;
+  text-align: center;
+  padding: .25rem;
+  margin: 2px;
+  cursor: pointer;
+}
+.name{
+  width: 60%;
+}
+.quantity{
+  width: 9rem;
+}
+.addInput{
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  position: sticky;
+  top: 0;
+}
+
+.inputAdd{
+  display: flex;
+  width: 70%;
+  gap: 3rem;
+  padding: 7px;
+}
+.inputAdd input{
+  padding: 3px;
+  font-size: 1rem;
+}
+
+.addInput button{
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.addInput button:active{
+  color: orangered;
+}
+.search{
+  padding: 7px;
+  margin-left: 11px;
+  text-align: center;
+  width: 60%;
+}
+.searchContainer{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
